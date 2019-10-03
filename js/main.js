@@ -594,7 +594,7 @@ document.querySelector("#replay").addEventListener('click', function() {
     }, 50);
     inProgress = true;
 
-    playRageBtn.innerHTML = 'PLS STAAAAAAAAAAAAAHP!!!!';
+    playRageBtn.innerHTML = 'PARAR!!!';
     sounds.rage.play();
     document.body.classList.add('rage-mode-page');
   };
@@ -602,7 +602,7 @@ document.querySelector("#replay").addEventListener('click', function() {
   const stopRageMode = () => {
     clearInterval(timerId);
     inProgress = false;
-    playRageBtn.innerHTML = 'play rage mode';
+    playRageBtn.innerHTML = 'jogar modo fúria';
     sounds.rage.pause();
     document.body.classList.remove('rage-mode-page');
   }
